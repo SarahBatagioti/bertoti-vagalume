@@ -31,9 +31,7 @@ cd bertoti-vagalume
 ```
 Instale as dependências:
 ```
-pip install beautifulsoup4 selenium python-dotenv
-pip install langchain
-
+pip install -r requirements.txt
 ```
 Instale o Ollama:
 https://ollama.com/download 
@@ -47,3 +45,5 @@ Depois rode o modelo:
 ```
 ollama run qwen3
 ```
+Após isso, crie uma conta em https://smith.langchain.com/o/fc513002-0bca-4fc5-989e-c1f7cc3a8080/ e gere uma api key, para configurar o nosso .env
+
