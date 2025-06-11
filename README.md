@@ -38,12 +38,22 @@ https://ollama.com/download
 
 Abra o cmd e baixe o modelo que iremos usar:
 ```
-ollama pull qwen3
+ollama pull llama3.2:3b
 ```
 
 Depois rode o modelo:
 ```
-ollama run qwen3
+ollama run llama3.2:3b
 ```
-Após isso, crie uma conta em https://smith.langchain.com/o/fc513002-0bca-4fc5-989e-c1f7cc3a8080/ e gere uma api key, para configurar o nosso .env
+Após isso, crie uma conta em https://smith.langchain.com/o/fc513002-0bca-4fc5-989e-c1f7cc3a8080/ e gere uma api key, para configurar o nosso .env. Repita o mesmo em https://app.tavily.com
 
+Após pegar as api keys, preencher seu .env com essas informações, além do seu email e senha para login no linkedin:
+```
+LANGCHAIN_API_KEY=""
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
+LANGCHAIN_PROJECT="ollama-langchain"
+TAVILY_API_KEY=""
+EMAIL = ""
+PASSWORD = ""
+```
